@@ -17,6 +17,5 @@ function patinhosForamPassear() {
     echo "\nFIM DA MÚSICA\n";
 }
 
-// Executa o programa
 patinhosForamPassear();
 ?>
