@@ -1,6 +1,5 @@
 <?php
 
-// Simulando um banco de dados com um array de contas
 $contas = [
     ["numero" => "12345-6", "cpf" => "111.222.333-44", "saldo" => 1500.75],
     ["numero" => "67890-1", "cpf" => "555.666.777-88", "saldo" => 250.50],
@@ -8,11 +7,9 @@ $contas = [
     ["numero" => "24680-3", "cpf" => "123.456.789-00", "saldo" => 500.25]
 ];
 
-// Solicita ao usuário o número da conta
 echo "Digite o número da conta para consulta: ";
 $numeroConta = trim(fgets(STDIN));
 
-// Busca a conta informada
 $contaEncontrada = null;
 foreach ($contas as $conta) {
     if ($conta["numero"] === $numeroConta) {
@@ -21,7 +18,6 @@ foreach ($contas as $conta) {
     }
 }
 
-// Exibe as informações da conta
 if ($contaEncontrada) {
     echo "\n===== INFORMAÇÕES DA CONTA =====\n";
     echo "Número da Conta: " . $contaEncontrada["numero"] . "\n";
